@@ -1,15 +1,19 @@
 
+/**
+ * import POKEMON from './data/pokemon/pokemon.js'
+ * import LoL from './data/lol/lol.js'
+ * import POTTER from './data/potter/potter.js'
+ import RICK from './data/rickandmorty/rickandmorty.js'
+ */
+import  dataSet  from './data/rickandmorty/rickandmorty.js';
 
-document.querySelector('#imgHumano').addEventListener('click', 
-function() {
+console.log(dataSet);
 
-document.querySelector('#imgAlien').classList.add('esconder');
-document.querySelector('#imgRobot').classList.add('esconder');	
-document.querySelector('#imgHumanoide').classList.add('esconder');
-document.querySelector('#imgParasito').classList.add('esconder');
-
-document.querySelector('#resultadosHum').classList.remove('esconder');
-//aqui traeriamos la data.js
-
-export species from './data.js';
+//import { example } from './data.js';
+/*
+ * console.log(POKEMON);
+ * console.log(LoL);
+ * console.log(POTTER)
+ * console.log(RICK)
+*/
 
