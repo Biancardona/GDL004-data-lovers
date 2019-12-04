@@ -174,6 +174,7 @@ idBotton.addEventListener('click', (event) => {
   let sortedByName = [];
   const eventClassName = event.currentTarget.className;
 
+
   if (eventClassName === 'humans') {
     sortedByName = sortAnythingByName(humans);
   }
