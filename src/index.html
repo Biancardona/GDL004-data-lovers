@@ -6,86 +6,154 @@
   <title>Data Lovers</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Annie Use Your Telescope" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Tajawal&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-  <div id="root"> 
-  <h1>El mundo de Rick and Morty</h1>
-</div>
-    <div id="imgHumano">
-    <img  name="humano" src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/1.jpeg"
-      alt="2" title="HUMANOS">
-    <br><br>
-    <h3>Human</h3>
-    </div>
+  <div id="inicio">
     <div>
-      <div id="resultadosHum" class="esconder">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum itaque odit deserunt quidem 
-        ipsa quibusdam assumenda quis culpa accusantium omnis cupiditate corporis soluta, illo repellendus 
-        delectus, quisquam eaque vel officia.</p>
+      <h2>Rick and Morty</h2>
+    </div>
+    <input id="btnInicio"  type="button" name="button" value="Search by specie">
+    <div>
+    <form>
+    <input id="formulario" name="q" type="search" class="form-control" placeholder="Search for character..." required>
+    <button id="search" class="btnBuscar" type="submit" value="+">SEARCH</button>
+    <p id="no_result"></p>
+    </form>
+  </div>
+  </div>
+
+  <div id="contenedor" class="esconder">
+
+    <div id="imgHumano" class="imgCharacters">
+      <img class="image" src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/4.jpeg"
+        alt="2">
+      <h3>Human</h3>
+      <div class="overlay">
+        <div class="text">Hello, click me</div>
+      </div>
     </div>
 
-    <div id="imgAlien">
-    <img  src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/14.jpeg"
-      alt="2">
-    <br><br>
-    <h3>Alien</h3>
-  </div>
-    <div class="conteiner">
-      <div id="resultadosAli"></div>
+    <div id="imgAlien" class="imgCharacters">
+      <img class="image" src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/14.jpeg"
+        alt="2">
+      <h3>Alien</h3>
+      <div class="overlay">
+        <div class="text">Hello, click me</div>
+      </div>
     </div>
 
-    <div id="imgRobot">
-    <img  src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/71.jpeg"
-      alt="2">
-    <h3>Robot</h3>
-  </div>
-    <div class="conteiner">
-      <div id="resultadosRob"></div>
+    <div id="imgUnknown" class="imgCharacters">
+      <img class="image" src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/25.jpeg"
+        alt="2">
+      <h3>Unknown</h3>
+      <div class="overlay">
+        <div class="text">Hello, click me</div>
+      </div>
     </div>
 
-    <div id="imgHumanoide" >
-    <img  src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/41.jpeg" alt="2">
-    <br><br>
-    <h3>Humanoid</h3>
-  </div>
-    <div class="conteiner">
-      <div id="resultadosHum"></div>
+    <div id="imgPoopybutthole" class="imgCharacters">
+      <img class="image" src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/30.jpeg"
+        alt="2">
+      <h3>Poopybutthole</h3>
+      <div class="overlay">
+        <div class="text">Hello, click me</div>
+      </div>
     </div>
 
-    <div id="imgParasito">
-    <img src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/16.jpeg" alt="2">
-    <h3>Parasite</h3>
+    <div id="imgMytholog" class="imgCharacters">
+      <img class="image" src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/40.jpeg"
+        alt="2">
+      <h3>Mytholog</h3>
+      <div class="overlay">
+        <div class="text">Hello, click me</div>
+      </div>
+    </div>
+
+    <div id="imgAnimal" class="imgCharacters">
+      <img class="image" src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/46.jpeg"
+        alt="2">
+      <h3>Animal</h3>
+      <div class="overlay">
+        <div class="text">Hello, click me</div>
+      </div>
+    </div>
+
+    <div id="imgVampire" class="imgCharacters">
+      <img class="image"
+        src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/374.jpeg" alt="2">
+      <h3>Vampire</h3>
+      <div class="overlay">
+        <div class="text">Hello, click me</div>
+      </div>
+    </div>
+
+    <div id="imgRobot" class="imgCharacters">
+      <img class="image" src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/71.jpeg"
+        alt="2">
+      <h3>Robot</h3>
+      <div class="overlay">
+        <div class="text">Hello, click me</div>
+      </div>
+    </div>
+
+    <div id="imgCronenberg" class="imgCharacters">
+      <img class="image" src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/82.jpeg"
+        alt="2">
+      <h3>Cronenberg</h3>
+      <div class="overlay">
+        <div class="text">Hello, click me</div>
+      </div>
+    </div>
+
+    <div id="imgDiseas" class="imgCharacters">
+      <img class="image" src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/96.jpeg"
+        alt="2">
+      <h3>Disease</h3>
+      <div class="overlay">
+        <div class="text">Hello, click me</div>
+      </div>
+    </div>
+
+    <div id="imgParasito" class="imgCharacters">
+      <img class="image" src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/16.jpeg"
+        alt="2">
+      <h3>Parasite</h3>
+      <div class="overlay">
+        <div class="text">Hello, click me</div>
+      </div>
+    </div>
+
+    <div id="imgHumanoide" class="imgCharacters">
+        <img class="image" src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/41.jpeg"
+          alt="2">
+        <br><br>
+        <h3>Humanoid</h3>
+        <div class="overlay">
+          <div class="text">Hello, click me</div>
+        </div>
+      </div>
+
   </div>
-  <div class="conteiner">
-    <div id="resultadosHum"></div>
+
+
+  <div>
+    <input id="btnFin" class="botonFin esconder" type="button" name="button"  value="GO TO HOME">
+  </div>
+  
+  <div id="resultados" class="esconder mostrar">
+    <input id="btnOrder" class="botonOrder" type="button" name="button" value="SORT ALPHABETICALLY">
   </div>
 
+  <div id="fin1">
 
-  <div class="esconder">
-    <div id="resultados"></div>
   </div>
-
-  <div id="root"></div>
-  <h1>El mundo de Rick and Morty</h1>
-  <h3>Human</h3><img src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/1.jpeg"
-    alt="2"></a>
-  <h3>Alien</h3><img src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/14.jpeg"
-    alt="2">
-  <h3>Robot</h3><img src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/71.jpeg"
-    alt="2">
-  <h3>Humanoid</h3><img src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/41.jpeg"
-    alt="2">
-  <h3>Parasite</h3><img src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/16.jpeg"
-    alt="2">
-
-
-
-
 
   <script type="module" src="main.js"></script>
+
 </body>
 
 </html>

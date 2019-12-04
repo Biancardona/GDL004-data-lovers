@@ -1,5 +1,376 @@
 
-.esconder{
-    display: none;
-
+.esconder {
+  display: none !important;
 }
+body, html{
+  height: 100%;
+  background-color:transparent;
+  margin: 0%;
+}
+.imgCharacters {
+  padding: 0.5rem 1rem 0 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+.imgCharacters {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: green;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.imgCharacters:hover .overlay {
+  bottom: 0;
+  height: 100%;
+  opacity: 0.6;
+}
+
+.imgCharacters:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  white-space: nowrap;
+  color: black;
+  font-size: 40px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+@keyframes colorLetra {
+  2% {
+    color: #C4CAD0
+  }
+
+  25% {
+    color: #878C8F
+  }
+
+  50% {
+    color: #A4969B
+  }
+
+  75% {
+    color: #655560
+  }
+
+  100% {
+    color: black
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+#inicio {
+  background-image: url('img/Rick-and-Morty-portal-tv-show.jpg');
+  min-height: 100%;
+  min-width: 100%;
+  background-color: #cccccc;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  background-color: transparent;
+}
+
+#no_result {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: transparent;
+  border-color: black;
+  border-radius: 9px;
+  border-width: medium;
+  font-size: 26px;
+  color: green;
+  position: absolute;
+  top: 20.4em;
+  left: 13.4em;
+}
+.inputStyle {
+  border-color: #290025;
+  border-radius: 9px;
+  border-width: medium;
+  font-size: 15px;
+  color: rgb(44, 230, 44);
+  background-color: gray;
+  width: 200px;
+  height: 30px;
+  position: absolute;
+  top: 5px;
+  left: 6.3rem;
+}
+  #btnInicio {
+  background-color: gray;
+  border-color: black;
+  border-radius: 9px;
+  border-width: medium;
+  font-size: 25px;
+  color: #CB9CF2;
+  animation-name: colorLetra;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  position: absolute;
+  top: 12em;
+  left: 1.7em;
+  
+}
+#formulario, #search{
+  background-color: transparent;
+  border-color: black;
+  border-radius: 9px;
+  border-width: medium;
+  font-size: 25px;
+  color: green;
+  position: absolute;
+  top: 10em;
+  left: 1.7em;
+}
+#search {
+  top: 24em;
+  left: 1.7em;
+  background-color: gray;
+  color: #CB9CF2;
+  animation-name: colorLetra;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+#formulario {
+  top: 22em;
+  left: 1.7em;
+  }
+  .botonFin{
+    border-color: #290025;
+    border-radius: 9px;
+    border-width: medium;
+    font-size: 15px;
+    color: rgb(44, 230, 44);
+    background-color: gray;
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    left: 6.3rem;
+  }
+  #btnOrder{
+    border-color: #290025;
+    border-radius: 9px;
+    border-width: medium;
+    color: rgb(44, 230, 44);
+    font-size: 15px;
+    background-color: gray;
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    top: -37px;
+    left: 6.3rem;
+  }
+@font-face {
+  font-family:get_schwifty;
+  src: url(fuente/get_schwifty.ttf);
+}
+  h2 {
+    font-family: get_schwifty;
+  margin-right: 15rem;
+  font-size: 5rem;
+  color: rgb(44, 230, 44);
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-direction: alternate;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+} 
+
+#contenedor {
+  font-family: "Annie Use Your Telescope";
+  font-size: 38px;
+  color: rgb(18, 26, 99);
+  position: relative;
+  text-align: center;
+  letter-spacing: 3px;
+  padding: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  background-color: transparent;
+}
+
+#resultados {
+  font-family: 'Tajawal', sans-serif;
+  font-size: 20px;
+  color: rgb(18, 26, 99);
+  position: relative;
+  padding: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  background-color: transparent;
+  top: 5rem;
+}
+
+#contenedor img:hover {
+  border-radius: 20%;
+  -webkit-border-radius: 10%;
+  box-shadow: 0px 0px 15px 15px;
+  -webkit-box-shadow: 0px 0px 15px 15px;
+  animation-name: imgStyle;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.characters {
+  padding: 0.5rem 1rem 0 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+.modal {
+  display: none;
+  position: fija;
+  padding: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb (0, 0, 0);
+  background-color: rgba (0, 0, 0, 0.5);
+}
+@media  (max-width: 700px){
+  
+  h2{
+    font-family: get_schwifty;
+  margin-right: 9rem;
+  font-size: 2rem;
+  color: rgb(44, 230, 44);
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-direction: alternate;
+  position: absolute;
+  top: 5rem;
+  left: 2rem;
+} 
+
+.botonFin{
+  border-color: #290025;
+  border-radius: 9px;
+  border-width: medium;
+  font-size: 10px;
+  color: rgb(44, 230, 44);
+  background-color: gray;
+  width: 170px;
+  height: 20px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+#btnOrder{
+  border-color: #290025;
+  border-radius: 9px;
+  border-width: medium;
+  color: rgb(44, 230, 44);
+  font-size: 10px;
+  background-color: gray;
+  width: 170px;
+  height: 20px;
+  position: absolute;
+  top: -37px;
+  left: 5px;
+}
+  #btnInicio {
+    background-color: gray;
+    border-color: black;
+    border-radius: 5px;
+    border-width: medium;
+    font-size: 17px;
+    color: #CB9CF2;
+    animation-name: colorLetra;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: 15em;
+    left: 3em;
+    
+  }
+  #formulario, #search{
+    background-color: transparent;
+    border-color: black;
+    border-radius: 5px;
+    border-width: medium;
+    font-size: 15px;
+    color: green;
+    position: absolute;
+    top: 10em;
+    left: 3em;
+  }
+  #search {
+    top: 37em;
+    left: 3em;
+    background-color: gray;
+  }
+  #formulario {
+    top: 35em;
+    left: 2.9em;
+    }
+    #inicio {
+      background-image: url('img/rick-morty-cel.jpg');
+      min-height: 100%;
+      min-width: 100%;
+      background-color: #cccccc;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      padding: auto;
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+    }
+}
+
